@@ -22,8 +22,32 @@ public class Main {
         System.out.println(snakeAlready);
         snakeAlready.hunting();
         System.out.println("________________________________________________________________________");
+        Predators hiena = new Predators("Гиена", 2, "джунгли", 10, "мясо");
+        Predators tigr = new Predators("тигр", 6, "савана", 20, "мясо");
+        Predators bear = new Predators("медведь", 10, "лес", 15, "мясо");
+        System.out.println(hiena);
+        System.out.println(tigr);
+        System.out.println(bear);
+        tigr.hunting();
+        tigr.walk();
+        tigr.sleep();
+        System.out.println("________________________________________________________________________");
 
+        Flightless peacock = new Flightless("павлин", 2, "степь", "шагает");
+        Flightless penguin = new Flightless("пингвин", 3, "береговая линия", "шагает, плавает");
+        Flightless dodo = new Flightless("птица додо", 2, "тропики", "бегает");
+        dodo.eat();
+        dodo.sleep();
 
+        System.out.println("________________________________________________________________________");
+        Flying seagull = new Flying("чайка", 1, "береговая линия", "летает");
+        Flying albatross = new Flying("альбатрос", 2, "береговая линия","летает");
+        Flying falcon = new Flying("сокол", 3, "скалы, воздух", "летает");
+        falcon.eat();
+        falcon.flying();
+        System.out.println(seagull);
+        System.out.println(albatross);
+        System.out.println(falcon);
 
     }
 }

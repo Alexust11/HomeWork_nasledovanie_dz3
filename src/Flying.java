@@ -12,4 +12,13 @@ public class Flying extends Birds {
         System.out.println(name+ " летает");
     }
 
+    @Override
+    public String toString() {
+        return "птица {" +
+                ", название='" + name + '\'' +
+                ", возраст=" + age +
+                ", тип движения='" + typeMovement + '\'' +
+                ", среда обитания='" + livingEnvironment + '\'' +
+                '}';
+    }
 }
